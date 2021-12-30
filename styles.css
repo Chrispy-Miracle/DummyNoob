@@ -1,0 +1,192 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body {
+    background-color: green;
+}
+h1 {
+    /* display: inline-block; */
+    text-align: center;
+    margin: 10px;
+    margin-left: 110px;
+    text-shadow: 2px 2px 2px lightgreen;
+}
+#play-container {
+    display: flex;
+    justify-content: space-around;
+    padding: 30px 0px;
+    margin: 10px 0px;
+}
+#tile-pool {
+    height: 375px; 
+    width: 250px;
+    border: 3px solid black;
+    background-color: grey;
+    margin: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.facedown-tiles {
+    flex-basis: auto;
+    height: 15px;
+    width: 25px;
+    background-color: khaki;
+    border: 1px solid black;
+    box-shadow: 2px 2px rgb(51, 51, 51);
+    margin: 3px;
+}
+.facedown-tiles:hover{
+    transform: scale(2) rotate(10deg);
+}
+#game-area {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    min-height: 400px;
+    width: 75vw;
+    border: 1px solid rgb(3, 70, 3);
+    margin: 10px;
+    padding: 10px 0px;
+    border-radius: 15px;
+}
+#player-board {
+    align-self: center;
+    height: 150px;
+    width: 800px;
+    /* border: 3px solid yellow; */
+    display: flex;
+    box-shadow: 10px 10px rgb(51, 51, 51);
+    transform: skewX(-10deg);
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+.playerboard-row {
+    display: flex;
+    justify-content: center;
+    border: 2px solid black;
+    height: 85px;
+    width: 800px;
+    box-shadow: 5px 5px black;
+    background-color: rgb(19, 18, 18);
+    transform: skewX(-10deg);
+    margin-left: 25vw;
+}
+#playerboard-bottom-row {
+    transform: skewX(-10deg) translate(-20px);
+    margin-bottom: 30px;
+}
+.players-tiles {
+    flex-basis: auto;
+    height: 70px;
+    width: 50px;
+    background-color: khaki;
+    border: 1px solid black;
+    box-shadow: 2px 2px rgb(51, 51, 51);
+    margin:5px;
+    margin-bottom: 10px;
+    justify-content: center;
+}
+.players-tiles:hover {
+    transform: translateY(-50px) scale(1.5);
+}
+.tile-number {
+    text-align: center;
+    margin-bottom: 5px;
+    font-weight: bolder;
+    font-size: 30px;
+}
+.tile-circle{
+    height: 25px;
+    width: 25px;
+    border: 2px solid burlywood;
+    border-radius: 50%;
+    margin-left: 12px;
+}
+.wild {
+    height: 30px;
+    width: 30px;
+    border: 2px solid rgb(219, 7, 7);
+    border-radius: 50%;
+    margin-left: 10px;
+    margin-top: 4px;
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.eyes {
+    font-weight: bold;
+    background-color: rgb(219, 7, 7);
+    /* border: 1px solid black; */
+    border-radius: 50%;
+    margin: 7px 4px;
+    height: 3px;
+    width: 3px;    
+}
+.mouth{
+    background-color: rgb(219, 7, 7);
+    /* border: 1px solid black; */
+    height: 5px;
+    width: 13px;
+    margin-bottom: 4px;
+    border-radius: 0px 0px 10px 10px;
+}
+.game-area-tiles {
+    flex-basis: auto;
+    height: 70px;
+    width: 50px;
+    background-color: khaki;
+    border: 1px solid black;
+    box-shadow: 2px 2px rgb(51, 51, 51);
+    margin: 10px 5px;
+    justify-content: center;
+}
+.game-area-tiles:hover {
+    transform: translateY(-25px) scale(1.25);
+}
+.tile-array{
+    display: flex;
+    border: 1px solid rgb(14, 66, 14);
+    height: fit-content;
+    margin: 5px;
+    padding: 5px;
+    border-radius: 10px;
+    background-color: rgb(10, 71, 10);
+}
+.dropzone{
+    height: 70px;  
+    width: 10px;
+    /* border: 1px solid black; */
+    margin: 10px 5px;
+    background-color: green;
+    border-radius: 5px;
+}
+.dropzoneB{
+    height: 70px;  
+    width: 10px;
+    /* border: 1px solid black; */
+    margin: 10px 5px;
+    background-color: grey;
+    border-radius: 5px;
+}
+.red {
+    color: rgb(156, 15, 15);
+    text-shadow: 1px 1px rgb(76, 75, 75);
+}
+.orange {
+    color: rgb(252, 126, 80);
+    text-shadow: 1px 1px rgb(76, 75, 75);
+
+}
+.blue {
+    color: rgb(30, 30, 228);
+    text-shadow: 1px 1px rgb(165, 164, 164);
+}
+.black {
+    text-shadow: 1px 1px rgb(165, 164, 164);
+
+}
